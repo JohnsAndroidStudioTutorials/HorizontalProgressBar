@@ -21,8 +21,7 @@ public class MainActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String progress = numberInput.getText().toString();
-                progressBar.setProgress(Integer.parseInt(progress));
+                progressBar.setProgress(Integer.parseInt(numberInput.getText().toString()));
             }
         });
     }
